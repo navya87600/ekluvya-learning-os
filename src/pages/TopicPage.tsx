@@ -114,7 +114,9 @@ export default function TopicPage() {
     videos.sort((a, b) => order[a.difficulty] - order[b.difficulty]);
   }
 
-  const uniqueProviders = foundTopic.videos.reduce<string[]>((acc, v) => acc.includes(v.provider) ? acc : [...acc, v.provider], []);
+  const providerSet: Record<string, boolean> = {};
+  foundTopic.videos.forEach(v => { providerSet[v.provider] = true; });
+  const uniqueProviders = Object.keys(providerSet);
 
   return (
     <AppLayout title={foundTopic.name}>

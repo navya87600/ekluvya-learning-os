@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Dashboard from "./pages/Dashboard";
+import AllCourses from "./pages/AllCourses";
 import CoursePage from "./pages/CoursePage";
 import TopicPage from "./pages/TopicPage";
 import LearningPath from "./pages/LearningPath";
@@ -19,10 +20,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/courses" element={<CoursePage />} />
+          <Route path="/courses" element={<AllCourses />} />
+          <Route path="/courses/:courseId" element={<CoursePage />} />
           <Route path="/topic/:topicId" element={<TopicPage />} />
           <Route path="/learning-path" element={<LearningPath />} />
-          {/* Placeholder routes */}
           <Route path="/quiz" element={<Dashboard />} />
           <Route path="/notes" element={<Dashboard />} />
           <Route path="/reports" element={<Dashboard />} />

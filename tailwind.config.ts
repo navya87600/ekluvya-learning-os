@@ -12,8 +12,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Syne", "sans-serif"],
-        body: ["Outfit", "sans-serif"],
+        heading: ["Poppins", "sans-serif"],
+        body: ["DM Sans", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       colors: {

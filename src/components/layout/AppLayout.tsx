@@ -11,7 +11,7 @@ export function AppLayout({ title, children }: AppLayoutProps) {
     <div className="flex min-h-screen">
       <Sidebar />
       <Topbar title={title} />
-      <main className="ml-[72px] pt-[60px] flex-1 min-h-screen">
+      <main className="ml-[240px] pt-[60px] flex-1 min-h-screen">
         <div className="p-7 animate-fadeUp">
           {children}
         </div>

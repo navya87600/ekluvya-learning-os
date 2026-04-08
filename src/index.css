@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,59 +6,59 @@
 
 @layer base {
   :root {
-    --background: 30 20% 97%;
-    --foreground: 15 14% 4%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
     --card: 0 0% 100%;
-    --card-foreground: 15 14% 4%;
+    --card-foreground: 0 0% 13%;
     --popover: 0 0% 100%;
-    --popover-foreground: 15 14% 4%;
-    --primary: 16 90% 49%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 14 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 25 18% 93%;
-    --secondary-foreground: 15 14% 4%;
-    --muted: 25 18% 93%;
-    --muted-foreground: 15 8% 46%;
-    --accent: 25 18% 93%;
-    --accent-foreground: 15 14% 4%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 13%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 13%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 25 14% 89%;
-    --input: 25 14% 89%;
-    --ring: 16 90% 49%;
-    --radius: 0.875rem;
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 14 100% 50%;
+    --radius: 0.75rem;
 
     /* Ekluvya brand tokens */
-    --brand: 16 90% 49%;
-    --brand-2: 18 100% 60%;
-    --ink: 15 14% 4%;
-    --ink-80: 15 9% 15%;
-    --ink-50: 15 6% 46%;
-    --ink-20: 25 8% 81%;
-    --surface: 30 20% 97%;
-    --surface-2: 22 14% 93%;
-    --ek-green: 155 78% 27%;
-    --ek-green-pale: 155 50% 94%;
-    --ek-blue: 214 78% 39%;
-    --ek-blue-pale: 214 60% 95%;
-    --ek-amber: 30 100% 35%;
-    --ek-amber-pale: 38 88% 94%;
-    --ek-purple: 265 72% 40%;
-    --ek-purple-pale: 265 50% 95%;
-    --ek-red-pale: 0 80% 95%;
+    --brand: 14 100% 50%;
+    --brand-2: 340 100% 55%;
+    --ink: 0 0% 13%;
+    --ink-80: 0 0% 25%;
+    --ink-50: 0 0% 50%;
+    --ink-20: 0 0% 82%;
+    --surface: 0 0% 100%;
+    --surface-2: 0 0% 96%;
+    --ek-green: 155 60% 35%;
+    --ek-green-pale: 155 40% 95%;
+    --ek-blue: 214 70% 45%;
+    --ek-blue-pale: 214 50% 96%;
+    --ek-amber: 30 90% 40%;
+    --ek-amber-pale: 38 80% 95%;
+    --ek-purple: 265 60% 45%;
+    --ek-purple-pale: 265 40% 96%;
+    --ek-red-pale: 0 70% 96%;
     --ai-1: 265 55% 52%;
     --ai-2: 262 100% 71%;
 
-    --sidebar-background: 15 14% 4%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 16 90% 49%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 13%;
+    --sidebar-primary: 14 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 100%;
-    --sidebar-accent-foreground: 15 14% 4%;
-    --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 16 90% 49%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 13%;
+    --sidebar-border: 0 0% 91%;
+    --sidebar-ring: 14 100% 50%;
 
-    --font-heading: 'Syne', sans-serif;
-    --font-body: 'Outfit', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
   }
 }
@@ -79,7 +79,7 @@
 }
 
 /* Custom scrollbar */
-::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: hsl(var(--surface-2)); }
 ::-webkit-scrollbar-thumb { background: hsl(var(--brand)); border-radius: 10px; }
 

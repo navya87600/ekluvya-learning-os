@@ -130,7 +130,7 @@ export default function WatchPage() {
                     </div>
                     {topic.videos.map((v, vi) => {
                       const isCurrentVideo = v.id === videoId;
-                      let status: "done" | "watching" | "review" | "locked" = "locked";
+                      let status: string = "locked";
                       if (topic.status === "completed") status = "done";
                       else if (topic.status === "in-progress") status = vi === 0 ? "done" : vi === 1 ? "watching" : "locked";
 

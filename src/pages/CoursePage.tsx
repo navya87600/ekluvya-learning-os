@@ -73,7 +73,7 @@ function ChapterAccordion({ chapter }: { chapter: Chapter }) {
               </div>
               <div className="grid grid-cols-3 gap-2.5 mb-4">
                 {(chapter.topics[0]?.videos || []).slice(0, 3).map((v) => (
-                  <div key={v.id} onClick={() => navigate(`/chapter/${chapter.number}`)} className={`rounded-lg overflow-hidden transition-all hover:-translate-y-0.5 cursor-pointer ${
+                  <div key={v.id} onClick={() => navigate(`/chapter/${chapter.number}?provider=${v.provider === "EKLUVYA" ? "ekluvya" : v.provider.includes("KHAN") ? "khan" : v.provider.includes("PHYSICS") ? "pw" : "unacademy"}`)} className={`rounded-lg overflow-hidden transition-all hover:-translate-y-0.5 cursor-pointer ${
                     v.isRecommended ? "bg-brand/[0.04] border-2 border-brand" : "bg-surface border border-border hover:border-brand"
                   }`}>
                     <div className={`h-[70px] bg-gradient-to-br ${v.thumbnailGradient} flex items-center justify-center text-2xl text-primary-foreground relative`}>

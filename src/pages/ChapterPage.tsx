@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { AppLayout } from "@/components/layout/AppLayout";
 import { chapters, type Video } from "@/data/mockData";
 
@@ -78,8 +78,10 @@ function VideoThumbnailCard({ video, chapterNumber, topicName, index }: { video:
 
 export default function ChapterPage() {
   const { chapterNumber } = useParams();
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const [activeFilter, setActiveFilter] = useState<FilterTab>("all");
+  const initialProvider = (searchParams.get("provider") as FilterTab) || "all";
+  const [activeFilter, setActiveFilter] = useState<FilterTab>(initialProvider);
   const chNum = parseInt(chapterNumber || "4");
   const chapter = chapters.find(c => c.number === chNum);
 
